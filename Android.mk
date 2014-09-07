@@ -20,7 +20,7 @@ ifneq ($(TARGET_EXTERNAL_APPS),)
 common_cflags += -DEXTERNAL_APPS_DEVICE_LABEL=\"$(TARGET_EXTERNAL_APPS)\"
 endif
 
-common_cflags += -Werror
+common_cflags += -Werror -Wno-error=unused-parameter
 
 common_src_files := \
 	VolumeManager.cpp \
